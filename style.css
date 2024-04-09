@@ -1,0 +1,235 @@
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* position: relative; */
+}
+
+.header {
+    /* margin-left: 40px; */
+  background-color: white;
+  color: #333;
+  padding: 15px 0;
+  /* position: ; */
+}
+
+.header-logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 40px;
+    margin-right: 20px; /* Optional: Add spacing between logo and navigation */
+  }
+  
+
+.header-nav {
+  text-align: right;
+  color: #333;
+}
+
+.header-nav ul {
+  list-style-type: none;
+}
+
+.header-nav ul li {
+  display: inline-block;
+  /* position: relative; */
+    /* border: 1px solid black; */
+    background-color: #fff;
+    
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 15px;
+    /* padding: 10px;
+    border-radius: 10px; */
+    /* margin: 35px 0; */
+    /* display: inline-block; Display the <li> elements inline */
+  }
+
+.header-nav ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header-nav ul li a:hover {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #797b79;
+  color: #fff;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+.download,
+.contact {
+  background-color: #f9f9f9;
+}
+
+
+.how-to-play p {
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style-type: none;
+}
+
+.features ul li {
+  margin-bottom: 10px;
+}
+
+.download .play-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #814804;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center; /* Center align the button */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 20px; /* Adjust vertical position if needed */
+  }
+  
+  .download .play-btn:hover {
+    background-color: #6a3a00; /* Change background color on hover */
+  }
+  .download .container {
+    text-align: center; /* Center align the text */
+  }
+  
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #814804;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #814804;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+ /* CSS for the slideshow and content layout */
+ .about {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .text {
+    text-align: justify;
+    flex: 1;
+    padding-right: 20px;
+    line-height: 2.5; /* Adjust the line-height value as needed */
+  }
+  
+
+  .slideshow {
+    flex: 1;
+    text-align: center;
+    /* border-radius: 15px; */
+  }
+
+  .slide {
+    max-width: 100%;
+    height: 500px;
+    display: none; /* Hide all slides by default */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  /* .box {
+    width: 100%;
+  } */
+  
+  .box {
+    width: 80%;
+    border: 2px solid #333;
+    padding: 50px;
+    margin-left: 150px;
+    /* margin-right: 10px; */
+  }
+  
+  h2{
+    text-align: center;
+  }
+  
+  p.justified {
+    text-align: justify;
+    line-height: 2.5;
+  } 
+  /* .features {
+    background-color: #f9f9f9;
+  }
+  
+  .features ol {
+    list-style-type: decimal;
+    /* Change list-style-type to "decimal" for ordered lists */
+  /* }
+  
+  .features ol li {
+    margin-bottom: 10px;
+  }
+*/
+.features {
+    background-color: #f9f9f9;
+  }
+  
+  .features ul {
+    list-style-type: disc; /* Remove default bullets */
+  }
+  
+  .features ul li {
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="../Lovedeep Project/images/tic-tac-toe.avif" alt="Tic Tac Toe Logo" class="header-logo">
+    <nav class="header-nav">
+      <ul>
+        <li><strong><a href="#about">About</a></strong></li>
+        <li><strong><a href="#how-to-play">How to Play</a></strong></li>
+        <li><strong><a href="#features">Features</a></strong></li>
+        <li><strong><a href="#download">Play Now</a></strong></li>
+        <li><strong><a href="#contact">Contact</a></strong></li>
+      </ul>
+    </nav>
+  </header>
+<section>
+  <div class="image">
+    <img src="../Lovedeep Project/images/homepage.jpg" width="100%">
+  </div>
+</section>
+<section id="about" class="section about">
+  <div class="container">
+    <div class="content">
+      <div class="text">
+        <h2>About "Tic-Tac-Toe" Game</h2>
+        <p>Tic Tac Toe, also known as noughts and crosses, is a classic game loved by people of all ages. Its origins can be traced back to ancient Egypt, where it was played on temple walls. Over time, it has evolved into the popular paper-and-pencil game we know today.</p>
+        <p>This digital version of Tic Tac Toe brings the timeless fun of the game to your device, allowing you to play anytime, anywhere.</p>
+      </div>
+      <div class="slideshow">
+        <img class="slide" src="../Lovedeep Project/images/about.jpg" alt="Image 1">
+        <img class="slide" src="../Lovedeep Project/images/about2.jpg" alt="Image 2">
+        <img class="slide" src="../Lovedeep Project/images/about3.jpg" alt="Image 3">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="how-to-play" class="section how-to-play">
+    <div class="box">
+      <div>
+      <h2>How to Play</h2>
+      <p>Tic Tac Toe is played on a 3x3 grid. Two players take turns marking empty cells with their chosen symbol, typically 'X' and 'O'. The goal is to get three of your symbols in a row, either horizontally, vertically, or diagonally, before your opponent does.</p>
+      <p>To win, you need to think strategically and anticipate your opponent's moves. The game ends when one player achieves three symbols in a row, or if the grid is filled without a winner (resulting in a draw).</p>
+    </div>
+  </div>
+  </section>
+
+  <section id="features" class="section features">
+    <div class="container">
+      <h2>Features</h2>
+      <ul>
+        <li>Beautiful and intuitive user interface</li>
+        <li>Play against a friend or against the computer</li>
+        <li>Multiple difficulty levels for solo play</li>
+        <li>Track your wins and losses</li>
+        <li>Responsive design - play on any device</li>
+      </ul>
+    </div>
+  </section>
+  
+  
+
+  <section id="download" class="section download">
+    <div class="container">
+      <h2>Play "Tic-Tac-Toe" Now</h2>
+      <p>Click the button below to start playing!</p>
+      <a href="../Lovedeep Project/Tic-Tac-Toe.html" class="play-btn">Play Game Now</a>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or feedback, feel free to reach out to us.</p>
+      <form class="contact-form" onsubmit="submitForm()">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit" id="sendMessage">Send Message</button>
+      </form>
+    </div>
+</section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Tic Tac Toe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+        // scripts-2.js
+        document.addEventListener("DOMContentLoaded", function() {
+  const productNames = document.querySelectorAll(".product h2");
+  productNames.forEach(function(productName) {
+    productName.addEventListener("click", function() {
+      this.classList.toggle("show-full-name");
+    });
+  });
+
+  document.querySelector(".contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Check if form fields are filled
+    var name = document.querySelector(".contact-form input[type='text']").value;
+    var email = document.querySelector(".contact-form input[type='email']").value;
+    var message = document.querySelector(".contact-form textarea").value;
+
+    if (name && email && message) {
+      // Redirect to success page
+      window.location.href = "support.html";
+    } else {
+      // Display an error message or perform any other action
+      alert("Please fill in all fields.");
+    }
+  });
+});
+
+  // JavaScript for the slideshow
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+</body>
+</html>
